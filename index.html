@@ -258,6 +258,48 @@
 
    	<div class="row pricing-content">
 
+		<p>Форматирование в <mark>HTML5</mark></p>
+        <p>Это <b>выделенный</b> текст</p>
+        <p>Это <strong>важный</strong> текст</p>
+        <p>Это <del>зачеркнутый</del> текст</p>
+        <p>Это <s>недействительный</s> текст</p>
+        <p>Это <em>важный</em> текст</p>
+        <p>Это текст <i>курсивом</i> </p>
+        <p>Это <ins>добавленный</ins> текст</p>
+        <p>Это <u>подчеркнутый</u> текст</p>
+		<p>X<sub>i</sub> = Y<sup><small>2</small></sup> + Z<sup><small>2</small></sup></p>
+		
+		<form method="get">
+			<p><input type="text" name="userName" placeholder="Введите имя" size="18" /></p>
+            <p>
+                <label for="phone">Выберите модель:</label>
+                <select id="phone" name="phone">
+                    <option value="iphone 6s">iPhone 6S</option>
+                    <option value="lumia 950">Lumia 950</option>
+                    <option value="nexus 5x">Nexus 5X</option>
+                    <option value="galaxy s7">Galaxy S7</option>
+                </select>
+			</p>
+            <p>
+                <input type="radio" value="man" checked name="gender"/>мужской
+            </p>
+            <p>
+                <input type="radio" value="woman" name="gender"/>женский
+            </p>
+            <p>
+                <input type="radio" value="html5" checked name="tech"/>HTML5
+            </p>
+            <p>
+                <input type="radio" value="net" name="tech"/>.NET
+            </p>
+            <p>
+                <input type="radio" value="java" name="tech"/>Java
+            </p>
+            <p>
+                <input type="submit" value="Отправить" />
+            </p>
+        </form>
+
          <div class="pricing-tables block-1-3 group">
 
             <div class="bgrid"> 
@@ -266,7 +308,7 @@
 
             		<div class="top-part" data-info="recommended">
 
-	            		<h3 class="plan-title">STANDARD</h3>
+	            	   <h3 class="plan-title">STANDARD</h3>
 		               <p class="plan-price"><sup>$</sup>14.99</p>
 					   <p class="price-month">6 мес. /1 год</p>
 					   <p class="price-meta">Безлимитное посещение всех тренировочных зон</p>	
@@ -282,7 +324,24 @@
 						  <li>Скидка на ресторан и фитнес бар: <strong>5%</strong></li>
 						  <li>Набор полотенец для занятий</li>
 						  <li>Камера хранения ценных вещей</li>
-		               </ul>
+						</ul>
+						<ul>
+							<li>Пункт 1.</li>
+							<li>Пункт 2.
+								<ul>
+									<li>Подпункт 2.1.</li>
+									<li>Подпункт 2.2.
+										<ul>
+											<li>Подпункт 2.2.1.</li>
+											<li>Подпункт 2.2.2.</li>
+										</ul>
+									</li>
+									<li>Подпункт 2.3.</li>
+								</ul>
+							</li>
+							<li>Пункт 3.</li>
+						</ul>
+						
 
 		               <a class="button large" href="">Оформить</a>
 
