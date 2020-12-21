@@ -1,0 +1,19 @@
+@mixin btn ($display, $border, $transition) {
+  display: $display;
+  border: $border;
+  -moz-transition:  $transition;
+  -o-transition:  $transition;
+  -webkit-transition:  $transition;
+  -ms-transition:  $transition;
+  transition:  $transition;
+}
+
+@mixin link ($display, $color, $transition) {
+    display: $display;
+    color: $color;
+    -moz-transition:  $transition;
+    -o-transition:  $transition;
+    -webkit-transition:  $transition;
+    -ms-transition:  $transition;
+    transition:  $transition;
+  }
