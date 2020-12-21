@@ -10,8 +10,11 @@
    <link rel="stylesheet" href="css/base.css">  
    <link rel="stylesheet" href="css/main.css">
    <link rel="stylesheet" href="css/vendor.css">     
+   <link rel="stylesheet" href="css/modal.css"> 
 
-	<link rel="icon" type="image/png" href="favicon.png">
+   <link rel="icon" type="image/png" href="favicon.png">
+
+   <script src="js/modernizr.js"></script>
 
 </head>
 
@@ -282,7 +285,7 @@
 						  <li>Камера хранения ценных вещей</li>
 		               </ul>
 
-		               <a class="button large" href="">Оформить</a>
+		               <button class="button large" id="modalBtn" href="">Оформить</button>
 
 	            	</div>
 
@@ -362,7 +365,32 @@
 
          </div>
 
-      </div>
+	  </div>
+	  
+	  <div id="myModal" class="modal">
+
+ 
+		<div class="modal-content">
+		  <div class="modal-header">
+			<span class="close">&times;</span>
+		  </div>
+		  <div class="modal-body">
+			<div class="subscribe-form">
+	      	
+				<form id="mc-form" class="group" novalidate="true">
+
+				  <input type="email" value="" name="valEmail" class="email" id="val-email" placeholder="type email &amp; hit enter" required=""> 
+		 
+					 <input type="submit" name="subscribe" >
+		 
+					 <label for="valEmail" class="validate-message"></label>
+	  
+			  </form>
+
+			</div>	  
+		  </div>
+		</div>
+	  </div>
 
    </section>
 
@@ -470,13 +498,13 @@
 	      	
 	      			<form id="mc-form" class="group" novalidate="true">
 
-							<input type="email" value="" name="dEmail" class="email" id="mc-email" placeholder="type email &amp; hit enter" required=""> 
+						<input type="email" value="" name="dEmail" class="email" id="mc-email" placeholder="type email &amp; hit enter" required=""> 
 	   		
 			   			<input type="submit" name="subscribe" >
 		   	
 		   				<label for="mc-email" class="subscribe-message"></label>
 			
-						</form>
+					</form>
 
 	      		</div>	      		
 	      	           	
@@ -510,6 +538,11 @@
    <div id="preloader"> 
     	<div id="loader"></div>
    </div> 
-</body>
 
+   <script src="js/jquery-1.11.3.min.js"></script>
+   <script src="js/jquery-migrate-1.2.1.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+   <script src="js/modal.js"></script>
+</body>
 </html>
