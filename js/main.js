@@ -41,7 +41,16 @@
       }
     
 	});
-	
+
+	/**/
+
+	$('.image-part').click(function() {
+		$(".image-part").hide(1000);
+	  });
+
+	  $('.email').one( "keydown", function()  {
+		$(".name").show();
+	  });
 
 	/*-----------------------------------------------------*/
   	/* Mobile Menu
@@ -231,9 +240,8 @@
     $(document).on('click', '.close-popup', function (e) {
     		e.preventDefault();
     		$.magnificPopup.close();
-    });
-
-
+	});
+	
  	/*----------------------------------------------------- */
   	/* Back to top
    ------------------------------------------------------- */ 
