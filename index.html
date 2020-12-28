@@ -7,17 +7,17 @@
 	<meta name="author" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-   <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
-   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-   <link rel="stylesheet" href="css/base.css">  
-   <link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/vendor.css">     
-   <link rel="stylesheet" href="css/modal.css"> 
+   <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css" onload="this.media='all'; this.onload=null">
+   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" onload="this.media='all'; this.onload=null">
+   <link rel="stylesheet" href="css/base.css" onload="this.media='all'; this.onload=null">  
+   <link rel="stylesheet" href="css/main.css" onload="this.media='all'; this.onload=null">
+   <link rel="stylesheet" href="css/vendor.css" onload="this.media='all'; this.onload=null">     
+   <link rel="stylesheet" href="css/modal.css" onload="this.media='all'; this.onload=null"> 
    
 
    <link rel="icon" type="image/png" href="favicon.png">
 
-   <script src="js/modernizr.js"></script>
+   <script defer src="js/modernizr.js"></script>
 
 </head>
 
@@ -415,7 +415,10 @@
 
                <li>
                	<div class="testimonial-author">
-                    	<img src="images/avatars/avatar-1.jpg" alt="Author image">
+						<img loading="lazy" srcset="images/avatars/avatar-1min.jpg"
+							sizes="(max-width: 150px), (min-width: 64px)"
+							src="images/avatars/avatar-1.jpg"
+						 	alt="Author image">
                     	<div class="author-info">
                     		Уильям Брэнч
                     		<span class="position">Профессиональный культурист, IFBB</span>
@@ -432,7 +435,7 @@
                <li> 
 
                	<div class="testimonial-author">
-                    	<img src="images/avatars/avatar-2.jpg" alt="Author image">
+                    	<img loading="lazy" src="images/avatars/avatar-2.jpg" alt="Author image">
                     	<div class="author-info">
                     		Роджер Федерер
                     		<span>Профессиональный теннисист</span>
@@ -611,13 +614,13 @@
     	<div id="loader"></div>
    </div> 
 
-   <script src="js/jquery-1.11.3.min.js"></script>
-   <script src="js/jquery-migrate-1.2.1.min.js"></script>
-   <script src="js/plugins.js"></script>
-   <script src="js/main.js"></script>
-   <script src="js/modal.js"></script>
-   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-   <script src="js/ac.js"></script>
+   <script defer src="js/jquery-1.11.3.min.js"></script>
+   <script defer src="js/jquery-migrate-1.2.1.min.js"></script>
+   <script defer src="js/plugins.js"></script>
+   <script defer src="js/main.js"></script>
+   <script defer src="js/modal.js"></script>
+   <script defer src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+   <script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   <script defer src="js/ac.js"></script>
 </body>
 </html>
